@@ -40,7 +40,7 @@
 										suggestionItems="{oPTModel>/SupplierSet}"
 										suggestionItemSelected="handleSuggestionSelected"
 										enableMultiLineMode="true"
-										tokens="{/filters/suppliers}"
+										tokens="{/filters/suppliers}" 
 										tokenUpdate="_handleDeleteSupplierToken"
 										tooltip="{i18n>supplierFilterInputTTP}"
 										submit="_handleSubmitToken"
