@@ -3,7 +3,6 @@ sap.ui.define([
 		"use strict";
 
 		return {
-			
 			totalFormatter: function(invoices){
 				if (!invoices){
 					return "";
