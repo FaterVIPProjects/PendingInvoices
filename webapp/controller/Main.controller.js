@@ -76,7 +76,7 @@ sap.ui.define([
 				cocdInput.setFilterSuggests(false);
 				cocdInput.removeAllSuggestionItems();
 			} else {
-				return null;
+				// return null;
 			}
 		},
 
@@ -700,7 +700,7 @@ sap.ui.define([
 				var total = oBundle.getText("total") + ": " + utils.getTotal(aLines);
 
 				//Set Report title in first row or line
-				sCSV += sReportTitle + ';;;;;;;;' + total + '\r\n';
+				sCSV += sReportTitle + ';;;;;' + total + '\r\n';
 				sCSV += oBundle.getText("paymentConditionLabel") + ": " + sPaymentConditions + '\r\n';
 
 				// AS - FIX bug #009: Stampa della società
