@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"org/fater/app/util/formatter",
-	"org/fater/app/util/utils",
+	"org/fater/pendinginvoices/util/formatter",
+	"org/fater/pendinginvoices/util/utils",
 	'sap/ui/model/Filter',
 	"sap/ui/model/Sorter",
 	'sap/ui/core/Fragment',
@@ -9,7 +9,7 @@ sap.ui.define([
 ], function(Controller, formatter, utils, Filter, Sorter, Fragment, MessageBox) {
 	"use strict";
 
-	return Controller.extend("org.fater.app.controller.Main", {
+	return Controller.extend("org.fater.pendinginvoices.controller.Main", {
 
 		formatter: formatter,
 
@@ -150,7 +150,7 @@ sap.ui.define([
 			// create value help dialog
 			if (!this._valueHelpDialog) {
 				this._valueHelpDialog = sap.ui.xmlfragment(
-					"org.fater.app.view.fragment.InputAssistedDialog",
+					"org.fater.pendinginvoices.view.fragment.InputAssistedDialog",
 					this
 				);
 				//Change type toolbar buttons
@@ -589,7 +589,7 @@ sap.ui.define([
 			this._selectedPersoTable = grid.getContent()[1].getContent()[0];
 			if (!this._personalizationDialog) {
 				this._personalizationDialog = sap.ui.xmlfragment(
-					"org.fater.app.view.fragment.TablePersonalizationDialog",
+					"org.fater.pendinginvoices.view.fragment.TablePersonalizationDialog",
 					this
 				);
 				this.getView().addDependent(this._personalizationDialog);
@@ -622,7 +622,7 @@ sap.ui.define([
 
 		_getDialog: function() {
 			if (!this._oTableVSDialog) {
-				this._oTableVSDialog = sap.ui.xmlfragment("org.fater.app.view.fragment.ViewSettingsDialog", this);
+				this._oTableVSDialog = sap.ui.xmlfragment("org.fater.pendinginvoices.view.fragment.ViewSettingsDialog", this);
 				this.getView().addDependent(this._oTableVSDialog);
 			}
 			var dialog = this._oTableVSDialog._dialog;
