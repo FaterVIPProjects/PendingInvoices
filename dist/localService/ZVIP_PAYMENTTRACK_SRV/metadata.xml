@@ -20,13 +20,15 @@
                     <PropertyRef Name="supplierId"/>
                     <PropertyRef Name="docNumber"/>
                 </Key>
-                <Property Name="supplierId" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Cod. Fornitore" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="supplierId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Fornitore" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
                 <Property Name="docNumber" Type="Edm.String" Nullable="false" MaxLength="16" sap:unicode="false" sap:label="Riferimento" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
                 <Property Name="docDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Data documento" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
                 <Property Name="amount" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="3" sap:unicode="false" sap:label="Importo" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Divisa" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="status" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Stato fattura" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="status" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Stato" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="agent" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Agente" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="dueDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Data scadenza" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="eMail" Type="Edm.String" Nullable="false" MaxLength="241" sap:unicode="false" sap:label="E-mail" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
             </EntityType>
             <EntityType Name="Invoice" sap:content-version="1">
                 <Key>
