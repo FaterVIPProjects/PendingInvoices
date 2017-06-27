@@ -35,7 +35,9 @@
 				</headerToolbar>
 				<columns>
 					<Column	
-						hAlign="Left">
+						hAlign="Left"
+						width="20%"
+						>
 						<Text text="{i18n>docNumberLabel}" 
 							tooltip="{i18n>docNumberColumnTTP}"/>
 					</Column>
@@ -87,7 +89,9 @@
 					items="{SuspInvoices}">
 					<columns>
 						<Column id="docNumberCol"		
-							hAlign="Left">
+							hAlign="Left"
+							width="20%"
+							>
 							<footer>
 								<Text text="{i18n>total}"></Text>
 							</footer>					

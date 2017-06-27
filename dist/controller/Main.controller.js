@@ -562,6 +562,9 @@ sap.ui.define([
 					if (oDateFrom) {
 						oDateFrom.setHours(oDateFrom.getHours() - 12);
 					}
+					
+					// FIX AS: Split fornitori per divisa
+					aInvoices = utils.splitSuppliersForCurrency(aInvoices) ;
 
 					oModel.setProperty(
 						"/invoices",
